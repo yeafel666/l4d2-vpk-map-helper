@@ -155,7 +155,8 @@ Write-Host "  Release 已创建（id=$($rel.id)）" -ForegroundColor Green
 Write-Host "==> 5/5 上传发布包"
 $zip = Join-Path $Root "L4D2开图助手.zip"
 if (Test-Path $zip) {
-    $assetName = [System.Uri]::EscapeDataString("L4D2开图助手.zip")
+    # GitHub Release 附件名只支持 ASCII（中文字符会被剥掉），统一用英文名
+    $assetName = "L4D2-MapHelper-$Tag.zip"
     $uploadUrl = "https://uploads.github.com/repos/$owner/$RepoName/releases/$($rel.id)/assets?name=$assetName"
     $bytes = [System.IO.File]::ReadAllBytes($zip)
     $ps = @{

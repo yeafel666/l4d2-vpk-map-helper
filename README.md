@@ -22,7 +22,7 @@
 
 ## 直接下载使用
 
-到 [Releases](https://github.com/yeafel666/l4d2-vpk-map-helper/releases) 下载 `L4D2开图助手.zip`，解压双击 `L4D2开图助手.exe` 即可。
+到 [Releases](https://github.com/yeafel666/l4d2-vpk-map-helper/releases) 下载 `L4D2-MapHelper-v1.0.0.zip`（附件名仅支持 ASCII，包内就是 `L4D2开图助手.exe`），解压双击即可。
 
 - Windows 10 / 11 自带的 .NET Framework 4.x 就能跑，**无需安装任何东西**
 - 全程离线，只读取本地文件
