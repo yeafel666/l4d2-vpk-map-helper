@@ -1,0 +1,19 @@
+# 编译产物
+build/
+dist/
+*.exe
+*.ico
+*.dll
+*.pdb
+
+# 发布包（走 GitHub Release 附件，不入库）
+*.zip
+
+# 调试产物
+*.user
+*.suo
+.vs/
+
+# 系统垃圾
+Thumbs.db
+desktop.ini
